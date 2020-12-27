@@ -235,10 +235,13 @@ header p
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
-.expertise .card svg
+.expertise .card i
 {
-    width: 50px;
-    height: 50px;
+    font-size: 60px;
+    background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
 }
 .expertise .card .imgBx
 {
