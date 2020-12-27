@@ -657,7 +657,7 @@ footer .subscribe .soc a:hover
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(../img/menu.png);
+        background-image: url(../img/menu.png);
         background-position: center;
         background-size: 30px;
         background-repeat: no-repeat;
@@ -670,11 +670,11 @@ footer .subscribe .soc a:hover
     {
         background-position: center;
         background-size: 20px;
-        background: url(../img/close.png);
+        background-image: url(../img/close.png);
         background-repeat: no-repeat;
         filter: invert(1);
         position: fixed;
-        right: 40px;
+        right: 10px;
     }
     /***********************HEADER**************************/
     header
