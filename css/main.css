@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body
+{
+    overflow-x: hidden;
+}
+.btn
+{
+    padding: 16px 30px;
+    border: 2px solid #00e0d0;
+    color: #00e0d0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+.btn:hover
+{
+    color: #73fff6;
+    border: 2px solid #73fff6;
+}
+/*******************************NAVIGATION**************************************/
+nav
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+nav .logo
+{
+    position: relative;
+    max-width: 200px;
+    color: #24A1B0;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    position: relative;
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul:hover li a
+{
+    opacity: 0.5;
+}
+nav ul li a:hover
+{
+    color: #00E0D0;
+    opacity: 1;
+}
+/******************************HEADER*****************************/
+header
+{
+    min-height: 100vh;
+    width: 100%;
+    background: url(../img/ho-bg.png);
+    background-blend-mode: multiply;
+    background-color: #2C264B;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .content
+{
+    max-width: 800px;
+    min-width: 300px;
+}
+header h1
+{
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+header h1::after{
+    content: " ";
+	display: block;
+	height: 2px;
+	background: #44C5CF;
+	width: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: -50%;
+}
+header p
+{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+}
+/*********************************ABOUT***************************/
+.about
+{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ececec;
+    padding: 40px 10%;
+}
+.about .content img
+{
+    max-width: 400px;
+    float: left;
+}
+.about .content .textBx
+{
+    min-width: 300px;
+    max-width: 600px;
+    float: right;
+}
+.about .content .textBx h1
+{
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20px;
+    font-size: 2em;
+}
+.about .content .textBx p
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+.about .btn:hover
+{
+    color: #00cabd;
+    border: 2px solid #00cabd;
+}
+/***********************EXPERTISE******************************/
+.expertise
+{
+    min-height: 75vh;
+    padding: 40px 50px;
+}
+.expertise span h1
+{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.expertise span p
+{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.expertise span p::after
+{
+    content: " ";
+	display: block;
+	height: 2px;
+	background: #818181;
+	width: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: -50%;
+}
+.expertise .card
+{
+    width: 33%;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.expertise .card svg
+{
+    width: 50px;
+    height: 50px;
+}
+.expertise .card .imgBx
+{
+    margin-bottom: 30px;
+}
+.expertise .card h1
+{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+/**************************TEAM****************************/
+.team
+{
+    min-height: 110vh;
+    width: 100%;
+    background: url(../img/ho-bg.png);
+    background-blend-mode: multiply;
+    background-color: #2C264B;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    padding: 30px 50px;
+    text-align: center;
+}
+.team span h1
+{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.team span p
+{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.team span p::after
+{
+    content: " ";
+	display: block;
+	height: 2px;
+	background: #818181;
+	width: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: -50%;
+}
+.team .card
+{
+    width: 20%;
+    height: 40%;
+    display: inline-block;
+    position: relative;
+    margin: 0 2%;
+    transition: all 0.3s;
+}
+.team .card:hover
+{
+    transform: scale(1.035);
+}
+.team .card .imgBx
+{
+    width: 100%;
+    height: 45%;
+}
+.team .card .imgBx img
+{
+    width: 100%;
+    height: 100%;
+}
+.team .card .textBx
+{
+    border: 1px solid #fff;
+    border-top: none;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.team-footer
+{
+    text-align: center;
+    margin: 4em;
+    font-family: 'Roboto', sans-serif;
+}
+/*********************WORKS*******************/
+.works
+{
+    min-height: 100vh;
+    width: 100%;
+    color: #000;
+}
+.works .title
+{
+    padding: 2.5% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.works .title h1
+{
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+.works .title a
+{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.works img
+{
+    width: 100%;
+}
+.works .works_footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+.works .btn:hover
+{
+    color: #00cabd;
+    border: 2px solid #00cabd;
+}
+/******************************TESTIMONIALS****************************/
+.testimonials
+{
+    min-height: 75vh;
+    width: 100%;
+    background: url(../img/ho-bg.png);
+    background-blend-mode: multiply;
+    background-color: #2C264B;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    padding: 30px 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.testimonials .content
+{
+    max-width: 700px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.testimonials .content span h1
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 8em;
+}
+.testimonials .content p
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+.testimonials .content h1
+{
+    text-transform: uppercase;
+}
+.testimonials .content h2
+{
+    text-transform: uppercase; 
+    font-weight: 100; 
+}
+/*******************************SLIDER******************************/
+.testimonials .slider
+{
+    margin: 30px;
+}
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+.swiper-container .swiper-slide img
+{
+    margin: 20%;
+    width: 20%;
+    height: 30%;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+.swiper-container .swiper-slide-active img
+{
+    transform: scale(2);
+    transition-delay: 0.35s;
+}
+/*******************************CONTACT********************************/
+.contact
+{
+    min-height: 100vh;
+    padding: 2.5% 10%;
+}
+.contact .form
+{
+    width: 50%;
+    padding: 0 60px;
+    float: left;
+    text-align: left;
+}
+.contact .form h1
+{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+.contact .form input
+{
+    padding: 10px;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.contact .form textarea
+{
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.contact .form .btn
+{
+    padding: 16px 40px;
+}
+.contact .form .btn:hover
+{
+    color: #00cabd;
+    border: 2px solid #00cabd;
+}
+.contact .company
+{
+    width: 50%;
+    float: right;
+    text-align: left;
+    padding: 0 30px;
+}
+.contact .company h1
+{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+.contact .company img
+{
+    width: 35%;
+    height: 50px;
+    margin: 30px 5%;
+}
+/************************FOOTER**************************/
+footer
+{
+    min-height: 50vh;
+    width: 100%;
+    background: url(../img/ho-bg.png);
+    background-blend-mode: multiply;
+    background-color: #2C264B;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    padding: 75px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info
+{
+    max-width: 30%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+}
+footer .info .logo
+{
+    position: relative;
+    max-width: 200px;
+    color: #24A1B0;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .info p
+{
+    margin: 20px 0;
+    line-height: 26px;
+    font-weight: 300;
+}
+footer .info .help
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info .help a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.5s;
+    margin: 0 5px;
+}
+footer .info .help a:hover
+{
+    color: #00e1ff;
+}
+footer .studio
+{
+    max-width: 30%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+footer .studio h2
+{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+footer .studio p
+{
+    margin: 20px 0;
+}
+footer .subscribe
+{
+    max-width: 30%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+}
+footer .subscribe h2
+{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+footer .subscribe .form input
+{
+    background: transparent;
+    padding: 5px;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+footer .subscribe .form .btnForm
+{
+    background: rgba(255, 255, 255, 0.4);
+    padding: 7px 5%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    transition: all 0.4s;
+}
+footer .subscribe .form .btnForm:hover
+{
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 1);
+}
+footer .subscribe .soc
+{
+    position: absolute;
+    display: flex;
+}
+footer .subscribe .soc a
+{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    margin: 10px 5px;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+footer .subscribe .soc a i
+{
+    color: #fff;
+    mix-blend-mode: difference;
+}
+footer .subscribe .soc a:hover
+{
+    background: #fff;
+}
+/****************************MEDIA*************************/
+@media (max-width: 991px)
+{
+    /******************NAVIGATION*****************/
+    nav
+    {
+        padding: 10px 0 10px 40px;
+    }
+    nav .logo
+    {
+        position: relative;
+        max-width: 60px;
+    }
+    nav ul
+    {
+        position: fixed;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        color: #111;
+        visibility: hidden;
+        opacity: 0;
+    }
+    nav ul.active
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+    nav ul li a
+    {
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+    nav ul li a:hover
+    {
+        color: #ed0223;
+    }
+    .toggleMenu
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../IMG/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+        top: 20;
+        right: 40;
+    }
+    .toggleMenu.active
+    {
+        background-position: center;
+        background-size: 20px;
+        background: url(../IMG/close.png);
+        background-repeat: no-repeat;
+        filter: invert(1);
+        position: fixed;
+        right: 40px;
+    }
+    /***********************HEADER**************************/
+    header
+    {
+        padding: 0;
+    }
+    header .content
+    {
+        max-width: 600px;
+    }
+    header h1
+    {
+        font-size: 2em;
+    }
+    header p
+    {
+        font-size: 0.75em;
+    }
+    /****************************************ABOUT******************************************/
+    .about
+    {
+        padding: 10px 5px;
+    }
+    .about .content
+    {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .about .content img
+    {
+        display: none;
+    }
+    /****************************EXPERTISE****************************************/
+    .expertise
+    {
+        min-height: 75vh;
+        padding: 10px 5px;
+    }
+    .expertise .content .card
+    {
+        width: 100%;
+    }
+    /*******************************TEAM**************************************/
+    .team
+    {
+        padding: 10px 0;
+    }
+    .team .card
+    {
+        width: 50%;
+        margin: 10px 0;
+    }
+    /*********************************WORKS**********************************************/
+    .works .title
+    {
+        padding: 1.5% 7.5%;
+    }
+    /*********************************TESTIMONIALS*************************************/
+    .testimonials
+    {
+        padding: 10px 5px;
+    }
+    .testimonials .content
+    {
+        min-width: 300px;
+        max-width: 400px;
+    }
+    .swiper-container .swiper-slide img
+    {
+        height: auto;
+    }
+    /********************************CONTACT*****************************/
+    .contact
+    {
+        padding: 1% 3%;   
+    }
+    .contact .form,
+    .contact .company
+    {
+        width: 100%;
+        margin: 10px 0;
+    }
+    /*****************************FOOTER***************************/
+    footer
+    {
+        min-height: 120vh;
+        padding: 15px 50px;
+        display: inline-block;
+    }
+    footer .info
+    {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    footer .studio
+    {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    footer .subscribe
+    {
+        max-width: 100%;
+    }
+    footer .subscribe .soc a
+    {
+        width: 30px;
+        height: 30px;
+    }
+}
