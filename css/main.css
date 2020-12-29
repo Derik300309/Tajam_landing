@@ -671,7 +671,7 @@ footer .subscribe .form .btnForm
 footer .subscribe .form .btnForm:hover
 {
     background: rgba(255, 255, 255, 0.8);
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.9);
 }
 footer .subscribe .soc
 {
