@@ -242,10 +242,10 @@ header p
     margin-bottom: 30px;
     transition: all 0.5s;
 }
-.expertise .card:hover .imgBx
+/* .expertise .card:hover .imgBx
 {
     transform: rotate(360deg);
-}
+} */
 .expertise .card i
 {
     font-size: 60px;
