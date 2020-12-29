@@ -565,7 +565,6 @@ footer .info
     min-width: 20%;
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    float: left;
 }
 footer .info .logo
 {
@@ -642,7 +641,6 @@ footer .subscribe
     min-width: 20%;
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    float: left;
 }
 footer .subscribe h2
 {
@@ -671,7 +669,7 @@ footer .subscribe .form .btnForm
 footer .subscribe .form .btnForm:hover
 {
     background: rgba(255, 255, 255, 0.8);
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 1);
 }
 footer .subscribe .soc
 {
@@ -685,8 +683,8 @@ footer .subscribe .soc a
     display: -ms-grid;
     display: grid;
     place-items: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     text-decoration: none;
     border: 2px solid #fff;
     margin: 10px 5px;
@@ -835,7 +833,7 @@ footer .subscribe .soc a:hover
     }
     .team .card
     {
-        width: 50%;
+        width: 45%;
         margin: 10px 0;
     }
     /*********************************WORKS**********************************************/
