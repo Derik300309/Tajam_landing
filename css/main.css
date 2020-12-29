@@ -236,6 +236,15 @@ header p
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
+.expertise .card .imgBx
+{
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.expertise .card:hover .imgBx
+{
+    transform: rotate(360deg);
+}
 .expertise .card i
 {
     font-size: 60px;
@@ -245,10 +254,6 @@ header p
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: initial;
-}
-.expertise .card .imgBx
-{
-    margin-bottom: 30px;
 }
 .expertise .card h1
 {
@@ -382,7 +387,8 @@ header p
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 40vh;
+            min-height: 35vh;
+    max-height: 60vh;
 }
 .works .btn:hover
 {
@@ -555,7 +561,8 @@ footer
 }
 footer .info
 {
-    max-width: 30%;
+    max-width: 32%;
+    min-width: 20%;
     text-align: left;
     font-family: 'Roboto', sans-serif;
     float: left;
@@ -615,7 +622,8 @@ footer .info .help a:hover
 }
 footer .studio
 {
-    max-width: 30%;
+    max-width: 32%;
+    min-width: 20%;
     text-align: left;
     font-family: 'Roboto', sans-serif;
 }
@@ -630,7 +638,8 @@ footer .studio p
 }
 footer .subscribe
 {
-    max-width: 30%;
+    max-width: 32%;
+    min-width: 20%;
     text-align: left;
     font-family: 'Roboto', sans-serif;
     float: left;
@@ -666,7 +675,6 @@ footer .subscribe .form .btnForm:hover
 }
 footer .subscribe .soc
 {
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -680,7 +688,7 @@ footer .subscribe .soc a
     width: 40px;
     height: 40px;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     margin: 10px 5px;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
@@ -695,6 +703,7 @@ footer .subscribe .soc a i
 footer .subscribe .soc a:hover
 {
     background: #fff;
+    border: 2px solid #000;
 }
 /****************************MEDIA*************************/
 @media (max-width: 991px)
@@ -832,7 +841,15 @@ footer .subscribe .soc a:hover
     /*********************************WORKS**********************************************/
     .works .title
     {
-        padding: 1.5% 7.5%;
+        padding: 1.5% 2.5%;
+    }
+    .works .title h1
+    {
+        font-size: 1.25em;
+    }
+    .works .title a
+    {
+        font-size: 0.80em;
     }
     /*********************************TESTIMONIALS*************************************/
     .testimonials
@@ -869,12 +886,12 @@ footer .subscribe .soc a:hover
     footer .info
     {
         max-width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
     footer .studio
     {
         max-width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
     footer .subscribe
     {
