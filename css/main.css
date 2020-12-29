@@ -901,3 +901,11 @@ footer .subscribe .soc a:hover
         height: 30px;
     }
 }
+@media(max-width: 425px)
+{
+    .team .card
+    {
+        width: 90%;
+        margin: 10px 5%;
+    }
+}
